@@ -8,13 +8,15 @@
 
 @if (!empty($featured))
     <section class="section pt-50 pb-50 bg-lightgray">
-        <div class="container">
+        
+		  <div  style="margin-top:-50px !important;">
             <div class="post-group post-group--hero">
+			    
                 @foreach ($featured as $feature_item)
                     @if ($loop->first)
-                    <div class="post-group__left">
-                        <article class="post post__inside post__inside--feature">
-                            <div class="post__thumbnail">
+                    <div class="post-group__left posgGroupLeft">
+                        <article class="post post__inside post__inside--feature" >
+                            <div class="post__thumbnail customPostThumbnail">
                                 <img src="{{ get_object_image($feature_item->image, 'featured') }}" alt="{{ $feature_item->name }}"><a href="{{ route('public.single', $feature_item->slug) }}" class="post__overlay"></a>
                             </div>
                             <header class="post__header">
@@ -28,9 +30,9 @@
                             </header>
                         </article>
                     </div>
-                    <div class="post-group__right">
+                    <div class="post-group__right postGroupRight">
                     @else
-                        <div class="post-group__item">
+                        <div class="post-group__item" >
                             <article class="post post__inside post__inside--feature post__inside--feature-small">
                                 <div class="post__thumbnail"><img src="{{ get_object_image($feature_item->image, 'medium') }}" alt="{{ $feature_item->name }}"><a href="{{ route('public.single', $feature_item->slug) }}" class="post__overlay"></a></div>
                                 <header class="post__header">
@@ -44,7 +46,8 @@
                     @endif
                 @endforeach
             </div>
-        </div>
+			</div>
+       
     </section>
 @endif
 <section class="section pt-50 pb-50">
