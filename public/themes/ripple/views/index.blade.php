@@ -9,7 +9,7 @@
 @if (!empty($featured))
     <section class="section pt-50 pb-50 bg-lightgray paddingTopCustom" >
         
-		  <div  style="margin-top:-50px !important;">
+		  <div  style="margin-top:-53px !important;">
             <div class="post-group post-group--hero">
 			    
                 @foreach ($featured as $feature_item)
@@ -122,19 +122,24 @@
 							<div class="post-group__content">
 								@foreach (get_req_cat(7, 21) as $post)
 									@if ($loop->first)
-										<article class="post post__vertical post__vertical--single">
-											<div class="post__thumbnail">
-												<img src="{{ get_object_image($post->image, 'medium') }}" alt="{{ $post->name }}"><a href="{{ route('public.single', $post->slug) }}" class="post__overlay"></a>
+										<div class="td_module_mx1 td_module_wrap td-animation-stack">
+											<div class="td-module-thumb">
+												<a href="{{ route('public.single', $post->slug) }}" rel="bookmark" class="td-image-wrap" title="{{ $post->name }}">
+												<img width="356" height="220" class="entry-thumb td-animation-stack-type0-2" src="{{ get_object_image($post->image, 'medium') }}" alt="" title="{{ $post->name }}">
+												</a>
 											</div>
-											<div class="post__content-wrap">
-												<header class="post__header">
-													<h3 class="post__title"><a href="{{ route('public.single', $post->slug) }}">{{ $post->name }}</a></h3>
-													<div class="post__meta"><span class="created__month">{{ date_from_database($post->created_at, 'M') }}</span><span class="created__date">{{ date_from_database($post->created_at, 'd') }}</span><span class="created__year">{{ date_from_database($post->created_at, 'Y') }}</span></div>
-												</header>
-												
-												
+											<div class="td-module-meta-info">
+												<h3 class="entry-title td-module-title">
+													<a href="{{ route('public.single', $post->slug) }}" rel="bookmark" title="{{ $post->name }}">{{ $post->name }}
+													</a>
+												</h3> 
+												<div class="td-editor-date">
+												<span class="td-author-date">
+													<span class="td-post-date"><time class="entry-date updated td-module-date">{{ date_from_database($post->created_at, 'M') }} {{date_from_database($post->created_at, 'd') }}, {{date_from_database($post->created_at, 'Y') }}</time></span> 
+												</span>
+												</div>
 											</div>
-										</article>
+										</div>
 									@else
 										<article class="post post__horizontal post__horizontal--single mb-20 clearfix">
 											<div class="post__thumbnail">
@@ -165,18 +170,24 @@
 							<div class="post-group__content">
 								@foreach (get_req_cat(7, 22) as $post)
 									@if ($loop->first)
-										<article class="post post__vertical post__vertical--single">
-											<div class="post__thumbnail">
-												<img src="{{ get_object_image($post->image, 'medium') }}" alt="{{ $post->name }}"><a href="{{ route('public.single', $post->slug) }}" class="post__overlay"></a>
+										<div class="td_module_mx1 td_module_wrap td-animation-stack">
+											<div class="td-module-thumb">
+												<a href="{{ route('public.single', $post->slug) }}" rel="bookmark" class="td-image-wrap" title="{{ $post->name }}">
+												<img width="356" height="220" class="entry-thumb td-animation-stack-type0-2" src="{{ get_object_image($post->image, 'medium') }}" alt="" title="{{ $post->name }}">
+												</a>
 											</div>
-											<div class="post__content-wrap">
-												<header class="post__header">
-													<h3 class="post__title"><a href="{{ route('public.single', $post->slug) }}">{{ $post->name }}</a></h3>
-													<div class="post__meta"><span class="created__month">{{ date_from_database($post->created_at, 'M') }}</span><span class="created__date">{{ date_from_database($post->created_at, 'd') }}</span><span class="created__year">{{ date_from_database($post->created_at, 'Y') }}</span></div>
-												</header>
-												
+											<div class="td-module-meta-info">
+												<h3 class="entry-title td-module-title">
+													<a href="{{ route('public.single', $post->slug) }}" rel="bookmark" title="{{ $post->name }}">{{ $post->name }}
+													</a>
+												</h3> 
+												<div class="td-editor-date">
+												<span class="td-author-date">
+													<span class="td-post-date"><time class="entry-date updated td-module-date">{{ date_from_database($post->created_at, 'M') }} {{date_from_database($post->created_at, 'd') }}, {{date_from_database($post->created_at, 'Y') }}</time></span> 
+												</span>
+												</div>
 											</div>
-										</article>
+										</div>
 									@else
 										<article class="post post__horizontal post__horizontal--single mb-20 clearfix">
 											<div class="post__thumbnail">

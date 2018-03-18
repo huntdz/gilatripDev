@@ -2,7 +2,7 @@
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <aside class="widget widget--transparent widget__footer widget__about">
                     <div class="widget__content">
                         <header class="person-info">
@@ -19,27 +19,32 @@
                         </div>
                     </div>
                 </aside>
-            </div>
-            {!! dynamic_sidebar('footer_sidebar') !!}
+            </div> -->
+            <!-- <div> {!! dynamic_sidebar('footer_sidebar') !!}</div> !-->
         </div>
     </div>
     <div class="page-footer__bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <div class="page-copyright">
-                        <p>{!! __(theme_option('copyright')) !!}</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="page-footer__social">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+				<div style="block">
+					<div class="page-footer__social">
                         <ul class="social social--simple">
                             <li><a href="{{ setting('facebook') }}" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="{{ setting('twitter') }}" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="{{ setting('google_plus') }}" title="Google"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
+				</div>
+				<div style="block">
+                    <div class="page-copyright">
+                        <p>{!! __(theme_option('copyright')) !!}</p>
+                    </div>
+				</div>	
                 </div>
+                
+                    
+                
             </div>
         </div>
     </div>
