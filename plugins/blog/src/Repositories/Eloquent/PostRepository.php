@@ -28,6 +28,26 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
         $this->resetModel();
         return $data;
     }
+	
+	
+	/**
+     * @param $catID
+     * @param  int $limit
+     * @return mixed
+     * @author Siganteng Ramadhona
+     */
+    public function getListPostCat($catID, $limit = 7)
+    {
+        $data = $this->model->where('posts.status', '=', 1)
+		    ->join('post_category','posts.id','=','post_category.post_id')
+            ->where('post_category.category_id', $catID)
+            ->orderBy('posts.created_at', 'desc')
+            ->limit($limit)
+            ->orderBy('posts.created_at', 'desc');
+        $data = apply_filters(BASE_FILTER_BEFORE_GET_FRONT_PAGE_ITEM, $data, $this->model, POST_MODULE_SCREEN_NAME)->get();
+        $this->resetModel();
+        return $data;
+    }
 
     /**
      * @param array $selected

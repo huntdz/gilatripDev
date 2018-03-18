@@ -26,7 +26,7 @@
     <body>
     <header class="header" id="header">
         <div class="header-wrap">
-            <nav class="nav-top">
+            <!-- <nav class="nav-top">
                 <div class="container">
                     <div class="pull-left">
                         <div class="hi-icon-wrap hi-icon-effect-3 hi-icon-effect-3a">
@@ -54,14 +54,14 @@
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> -->
         </div>
     </header>
     <header data-sticky="false" data-sticky-checkpoint="200" data-responsive="991" class="page-header page-header--light">
         <div class="container">
             <!-- LOGO-->
             <div class="page-header__left"><a href="{{ url('/') }}" class="page-logo">
-                    <img src="/themes/ripple/assets/images/smal-logo.png" alt="{{ setting('site_title') }}" height="50">
+                    <img src="/themes/ripple/assets/images/smal-logo.png" alt="{{ setting('site_title') }}" height="40">
                 </a></div>
             <div class="page-header__right">
                 <!-- MOBILE MENU-->

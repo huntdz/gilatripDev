@@ -20,6 +20,15 @@ interface PostInterface extends RepositoryInterface
      * @author Sang Nguyen
      */
     public function getListPostNonInList(array $selected = [], $limit = 7);
+	
+	/**
+     * @param categori $catId
+     * @param int $limit
+     * @return mixed
+     * @author Siganteng Ramadhona
+     */
+	
+	public function getListPostCat($catId, $limit = 7);
 
     /**
      * @param $category

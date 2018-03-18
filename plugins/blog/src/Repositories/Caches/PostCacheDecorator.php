@@ -62,6 +62,11 @@ class PostCacheDecorator extends CacheAbstractDecorator implements PostInterface
     {
         return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
     }
+	
+	public function getListPostCat($catID, $limit = 7)
+	{
+		return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
+	}
 
     /**
      * @param $user_id

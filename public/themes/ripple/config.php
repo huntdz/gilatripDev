@@ -56,6 +56,8 @@ return [
             $theme->asset()->usePath()->add('font-awesome', 'vendor/font-awesome/css/font-awesome.min.css');
             $theme->asset()->usePath()->add('ionicons', 'plugins/ionicons/css/ionicons.min.css');
             $theme->asset()->usePath()->add('main', 'css/main.css');
+			$theme->asset()->usePath()->add('fonts-custom', 'css/fonts-custom.css');
+			$theme->asset()->usePath()->add('gotamfont', 'css/gotamfont.css');
 			$theme->asset()->usePath()->add('custom', 'css/custom.css');
             $theme->asset()->usePath()->add('style', 'css/style.min.css');
             $theme->asset()->usePath()->add('ripple.css', 'css/ripple.css');

@@ -1,4 +1,4 @@
-<footer data-background="{{ Theme::asset()->url('images/page-intro-01.png') }}" class="page-footer bg-dark pt-50 bg-parallax">
+<footer data-background="{{ Theme::asset()->url('images/bgfooter.png') }}" class="page-footer bg-dark pt-50 bg-parallax">
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row">

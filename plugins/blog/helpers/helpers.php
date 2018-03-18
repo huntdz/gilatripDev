@@ -32,6 +32,20 @@ if (!function_exists('get_latest_posts')) {
 }
 
 
+if (!function_exists('get_req_cat')) {
+    /**
+     * @param $limit
+     * @param array $excepts
+     * @return mixed
+     * @author Sang Nguyen
+     */
+    function get_req_cat($limit, $catID)
+    {
+        return app(PostInterface::class)->getListPostCat($catID, $limit);
+    }
+}
+
+
 if (!function_exists('get_related_posts')) {
     /**
      * @param $current_slug
