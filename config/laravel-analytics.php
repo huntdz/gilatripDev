@@ -12,7 +12,7 @@ return [
      * Path to the json file with service account credentials. Take a look at the README of this package
      * to learn how to get this file.
      */
-    'service_account_credentials_json' => storage_path('service-account-credentials.json'),
+    'service_account_credentials_json' => storage_path('app/laravel-google-analytics/service-account-credentials.json'),
 
     /*
      * The amount of minutes the Google API responses will be cached.
