@@ -12,7 +12,7 @@ _ide_helper_models.php
 /storage/app/backup
 /storage/cache_keys.json
 /storage/languages.json
-
+service-account-credentials.json
 __MACOSX
 node_modules
 /.phpintel
