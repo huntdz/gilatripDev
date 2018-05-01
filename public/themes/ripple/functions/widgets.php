@@ -11,10 +11,16 @@ register_sidebar([
     'description' => __('This is footer sidebar section'),
 ]);
 
+
 require_once __DIR__ . '/../widgets/tags/tags.php';
 require_once __DIR__ . '/../widgets/custom-menu/custom-menu.php';
+require_once __DIR__ . '/../widgets/custom-menu-footer/custom-menu.php';
 require_once __DIR__ . '/../widgets/recent-posts/recent-posts.php';
+require_once __DIR__ . '/../widgets/text-footer/text-footer.php';
 
 register_widget(TagsWidget::class);
 register_widget(CustomMenuWidget::class);
+register_widget(CustomMenuFooterWidget::class);
 register_widget(RecentPostsWidget::class);
+register_widget(TextFooterWidget::class);
+

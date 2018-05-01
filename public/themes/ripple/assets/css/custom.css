@@ -39,7 +39,7 @@ body{font-family: "Gotham Book", Arial, sans-serif !important; background:#fff !
 .post__inside--feature .post__title:hover a {color:#03A9F4 !important;}
 .post__inside--feature .post__meta .post-category {color:#fff !important}
 
-.page-footer__bottom .page-footer__social{text-align:center !important}
+.page-footer__bottom .page-footer__social{text-align:right !important}
 .page-copyright{ display:block !important; text-align:center}
 
 /*---- Modul Baru -------*/
@@ -135,6 +135,35 @@ body{font-family: "Gotham Book", Arial, sans-serif !important; background:#fff !
     top: 2px;
 }
 
+
+.social--simple a {
+    
+    padding: 14px !important;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footerCustom{
+	
+}
+
+.footerCustom h3{
+	color: #fff;
+    border-bottom: 1px solid #6d6d6d;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.footerCustom p{
+	text-align:justify;
+	font-size:12px;
+	color:#fff;
+}
+
+#back2top.active {
+    bottom: 67px !important;
+	
+}
 
 @media only screen and (max-width: 991px) {
    .customPostThumbnail img{ width:100%; height:auto !important;}

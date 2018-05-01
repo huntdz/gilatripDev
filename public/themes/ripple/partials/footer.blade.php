@@ -21,27 +21,34 @@
                 </aside>
             </div> -->
             <!-- <div> {!! dynamic_sidebar('footer_sidebar') !!}</div> !-->
+			<div class="footerCustom">	
+					{!! dynamic_sidebar('footer_sidebar') !!}
+			</div>
         </div>
     </div>
     <div class="page-footer__bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+				
 				<div style="block">
-					<div class="page-footer__social">
-                        <ul class="social social--simple">
-                            <li><a href="{{ setting('facebook') }}" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="{{ setting('twitter') }}" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="{{ setting('google_plus') }}" title="Google"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-				</div>
-				<div style="block">
-                    <div class="page-copyright">
+                    <div>
                         <p>{!! __(theme_option('copyright')) !!}</p>
                     </div>
 				</div>	
                 </div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<div style="block">
+						<div class="page-footer__social">
+							<ul class="social social--simple">
+								<li><a href="{{ setting('facebook') }}" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="{{ setting('twitter') }}" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCB4paUkTxN6CaG6su3xocIg" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+								<li><a href="https://www.instagram.com/officialgilatrip" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
                 
                     
                 
